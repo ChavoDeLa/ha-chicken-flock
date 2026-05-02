@@ -66,8 +66,8 @@ Daily egg log stored in `.storage/chicken_flock_data` — and exportable as a cl
 
 ![JSON storage showing daily_log with per-hen counts by date](screenshots/json_storage.png)
 
-### CSV import
-Import from FLOCKSTAR or any spreadsheet — one row per egg, date + member name format. 1,200+ rows of historical data imports cleanly.
+### CSV Export
+Export CSV example
 
 ![CSV data showing 1200+ rows of historical egg data by date and hen name](screenshots/csv_data.png)
 
@@ -275,8 +275,8 @@ recorder:
 **Counter entities not appearing**
 Ensure the bird is set to Active and Track Eggs. Only active, tracked hens without a death date get counter entities.
 
-**History shows eggs on the wrong date**
-Use the **✎ Edit** button in the History tab to correct individual entries. This can happen if HA was restarted around midnight before the fix in v1.2.0.
+**History shows eggs on the wrong date...because a few were missed**
+Use the **✎ Edit** button in the History tab to correct individual entries.
 
 **Integration fails to load after update**
 Delete the Python cache and restart:
@@ -285,7 +285,7 @@ rm -rf /config/custom_components/chicken_flock/__pycache__
 ```
 
 **Card not updating after file change**
-Bump the version query string on the resource URL:
+Bump the version query string (?v=xx) on the resource URL in the Resources tab under Dashbnoards:
 ```yaml
 url: /local/chicken-flock-card.js?v=2
 ```
