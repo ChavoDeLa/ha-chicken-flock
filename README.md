@@ -23,7 +23,7 @@ Full roster with photos, notes, and colour-coded left-edge accent bars. Deceased
 ![All birds tab showing deceased birds with photos and notes](screenshots/all_birds_tab.png)
 
 ### Statistics — overall totals
-9,867 eggs all-time across 1,800 logged days. KPI tiles for all-time, yearly, monthly, weekly, daily average, weekly average, best day, and days logged.
+KPI tiles for all-time, yearly, monthly, weekly, daily average, weekly average, best day, and days logged.
 
 ![Statistics tab showing KPI tiles and per-hen breakdown table](screenshots/statistics_tab.png)
 
@@ -50,7 +50,7 @@ Five colour presets (Forest Green, Ocean Blue, Deep Teal, Violet, Slate) plus fu
 ![Settings tab showing colour presets and custom colour pickers](screenshots/settings_tab.png)
 
 ### HA integration page
-28 entities created — per-hen number counters, flock sensors, and a reset button entity.
+ per-hen number counters, flock sensors, and a reset button entity.
 
 ![HA integration page showing Chicken Flock v1.2.0 with 28 entities](screenshots/config_flow.png)
 
