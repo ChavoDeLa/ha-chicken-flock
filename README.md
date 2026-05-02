@@ -10,6 +10,16 @@ A Home Assistant integration for backyard flock management. Track egg production
 
 ---
 
+## Basic Usage
+- Install the integration
+- register the card in resources
+- drop the card on a new dashboard
+- add birds, import data as necessary
+- add photos, notes, etc
+- begin recording daily
+- at midnight every night, counters reset to zero, counts are saved to JSON file
+- historical data and stats are populated automatically from live entries and JSON data file
+
 ## Screenshots
 
 ### Active flock view
