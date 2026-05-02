@@ -1,0 +1,83 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Chicken Flock",
+        "description": "This integration tracks your flock and creates egg counter entities for each active tracked hen. Manage your chickens after setup via the integration options.",
+        "data": {}
+      }
+    },
+    "abort": {
+      "already_configured": "Chicken Flock is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Manage your flock",
+        "data": {
+          "action": "Choose an action"
+        }
+      },
+      "add_chicken": {
+        "title": "Add a chicken",
+        "data": {
+          "name": "Name",
+          "breed": "Breed",
+          "sex": "Sex",
+          "birthdate": "Birthdate (YYYY-MM-DD)",
+          "deathdate": "Death date (YYYY-MM-DD, leave blank if alive)",
+          "active": "Active in flock",
+          "track_eggs": "Track eggs",
+          "notes": "Notes"
+        }
+      },
+      "edit_chicken": {
+        "title": "Edit {name}",
+        "data": {
+          "name": "Name",
+          "breed": "Breed",
+          "sex": "Sex",
+          "birthdate": "Birthdate (YYYY-MM-DD)",
+          "deathdate": "Death date (YYYY-MM-DD, leave blank if alive)",
+          "active": "Active in flock",
+          "track_eggs": "Track eggs",
+          "notes": "Notes"
+        }
+      }
+    }
+  },
+  "services": {
+    "add_chicken": {
+      "name": "Add chicken",
+      "description": "Add a new chicken to the flock.",
+      "fields": {
+        "name": { "name": "Name", "description": "Chicken's name." },
+        "breed": { "name": "Breed", "description": "Breed of the chicken." },
+        "sex": { "name": "Sex", "description": "hen or rooster." },
+        "birthdate": { "name": "Birthdate", "description": "Date of birth (YYYY-MM-DD)." },
+        "active": { "name": "Active", "description": "Whether the chicken is active in the flock." },
+        "track_eggs": { "name": "Track eggs", "description": "Whether to create an egg counter entity." },
+        "notes": { "name": "Notes", "description": "Free-text notes." }
+      }
+    },
+    "update_chicken": {
+      "name": "Update chicken",
+      "description": "Update a chicken's profile.",
+      "fields": {
+        "chicken_id": { "name": "Chicken ID", "description": "UUID of the chicken to update." }
+      }
+    },
+    "remove_chicken": {
+      "name": "Remove chicken",
+      "description": "Remove a chicken from the flock and delete its counter entity.",
+      "fields": {
+        "chicken_id": { "name": "Chicken ID", "description": "UUID of the chicken to remove." }
+      }
+    },
+    "reset_daily_counts": {
+      "name": "Reset daily egg counts",
+      "description": "Reset all egg counters to zero. Wire this to a daily automation."
+    }
+  }
+}
