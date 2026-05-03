@@ -10,9 +10,6 @@ Designed specifically for those looking to exit paid services like FlockStar or 
 
 !!!!!Warning!!!!!: Always back up your data.  This integration is desgined for this to be easy and streamlined- data can be downloaded in JSON or CSV format in milliseconds from any device directly from the card.  It is also stored in .storage for easy identification and regular automatic backup.  I am below a novice when it comes to software development, and used Claude heavily in the development of this integration.  Errors, issues, or unknown interactions could occur due to its use now or in the future.  By using this integration, you accept these risks as your own.
 
-> Built with [Claude](https://claude.ai) by [ChavoDeLa](https://github.com/ChavoDeLa).
-# Support Chicken Flock
-
 If you find this integration useful, consider buying me a coffee — or a bag of chicken feed. 🐔
 ---
 
@@ -35,6 +32,8 @@ bc1q6xg9c68ctasnuy4ulykutek00qfqdg7ked3wx0
 [![XMR](https://img.shields.io/badge/XMR-Monero-grey?logo=monero)](monero:84rnq45GLope8ZtugXternBAun7cMCXVL1JcTFsWp1qW7jCMaa8cYL9NCiSAiZJMsJe77pMSUJrHdeaZRsvP9jGs7LB2DvW)
 
 ---
+> Built with [Claude](https://claude.ai) by [ChavoDeLa](https://github.com/ChavoDeLa).
+
 ---
 
 ## Basic Usage
