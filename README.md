@@ -52,7 +52,7 @@ bc1q6xg9c68ctasnuy4ulykutek00qfqdg7ked3wx0
 ### Lovelace card Via HACS (recommended)
 
 1. In HACS, go to **Frontend → ⋮ → Custom repositories**
-2. Add `https://github.com/ChavoDeLa/ha-chicken-flock-card` as **Lovelace**
+2. Add `https://github.com/ChavoDeLa/ha-chicken-flock-card` as **Dashboard**
 3. Find **Chicken Flock Card** and install
 4. Refresh your browser
 
