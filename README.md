@@ -84,7 +84,7 @@ Manage your flock from the Lovelace card. No YAML configuration is needed.
 
 ---
 
-## Adding the card to your dashboard
+### Adding the card to your dashboard
 
 ```yaml
 type: custom:chicken-flock-card
