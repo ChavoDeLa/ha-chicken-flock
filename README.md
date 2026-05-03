@@ -61,7 +61,7 @@ bc1q6xg9c68ctasnuy4ulykutek00qfqdg7ked3wx0
 3. Copy `www/chicken-flock-card.js` to `config/www/`
 4. Restart Home Assistant
 
-## Lovelace card Manual installation
+### Lovelace card Manual installation
 
 Copy `chicken-flock-card.js` from https://github.com/ChavoDeLa/ha-chicken-flock-card to `config/www/`, then register it as a resource:
 
