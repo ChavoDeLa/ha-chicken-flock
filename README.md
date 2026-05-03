@@ -90,6 +90,20 @@ Manage your flock from the Lovelace card. No YAML configuration is needed.
 type: custom:chicken-flock-card
 ```
 
+### Recorder configuration (recommended)
+
+Add to `configuration.yaml` to prevent large attribute payloads from causing recorder warnings:
+
+```yaml
+recorder:
+  exclude:
+    entities:
+      - sensor.flock_egg_history
+      - sensor.flock_roster
+    entity_globs:
+      - number.flock_*
+```
+
 No additional configuration options required. All settings are in the card's ⚙ Settings tab.
 
 ---
@@ -280,22 +294,6 @@ config/www/flock_photos/<chicken_id>_egg.jpg
 ```
 
 The `.storage` file is included in standard HA backups. Use the card's Export tab to download a portable JSON backup at any time.
-
----
-
-## Recorder configuration (recommended)
-
-Add to `configuration.yaml` to prevent large attribute payloads from causing recorder warnings:
-
-```yaml
-recorder:
-  exclude:
-    entities:
-      - sensor.flock_egg_history
-      - sensor.flock_roster
-    entity_globs:
-      - number.flock_*
-```
 
 ---
 
