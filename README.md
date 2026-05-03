@@ -6,8 +6,11 @@
 
 A Home Assistant integration for backyard flock management. Track egg production history, manage bird profiles with photos, and maintain a permanent record of your flock — all stored locally in JSON and surfaced through a polished Lovelace card.
 
+Designed specifically for those looking to exit paid services like FlockStar or otherwise.  This is a backyard management application, NOT a commercial flock management hub.  If critical uptime or real business operations are involved, you are hereby recommended to stick with youir paid service.
+
 > Built with [Claude](https://claude.ai) by [ChavoDeLa](https://github.com/ChavoDeLa).
 
+Warning: Always back up your data.  This integration is desgined for this to be easy and streamlined- data can be downloaded in JSON or CSV format in milliseconds from any device directly from the card.  It is also stored in .storage for easy identification and regular automatic backup.  I am below a novice when it comes to software development, and used Claude heavily in the development of this integration.  Errors, issues, or unknown interactions could occur due to its use now or in the future.  By using this integration, you accept these risks as your own.
 ---
 
 ## Basic Usage
@@ -60,12 +63,12 @@ Five colour presets (Forest Green, Ocean Blue, Deep Teal, Violet, Slate) plus fu
 ![Settings tab showing colour presets and custom colour pickers](screenshots/settings_tab.png)
 
 ### HA integration page
- per-hen number counters, flock sensors, and a reset button entity.
+Single click initial config.
 
 ![HA integration page showing Chicken Flock v1.2.0 with 28 entities](screenshots/config_flow.png)
 
 ### Config flow — flock management
-Add, edit, and remove birds from HA's native config flow as well as the Lovelace card.
+Add, edit, and remove birds from HA's native config flow as well as the Lovelace card (card is better)
 
 ![Config flow showing flock member list with active/inactive status](screenshots/config_flow_flock.png)
 
