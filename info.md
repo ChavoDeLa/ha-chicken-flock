@@ -7,7 +7,6 @@ Home Assistant flock tracker — egg history, statistics, photos, hatch date, de
 ## Features at a glance
 
 - **Live egg counters** per hen as native HA number entities — connect any button, NFC tag, or automation
-- **9,867+ eggs tracked** across 1,800+ logged days in the demo flock
 - **Per-hen statistics** — all-time, yearly, monthly, weekly, and today
 - **Stacked bar chart history** — filterable by year, month, week, or day
 - **Bird photos and egg reference photos** per hen
