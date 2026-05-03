@@ -8,7 +8,7 @@ A Home Assistant integration for backyard flock management. Track egg production
 
 Designed specifically for those looking to exit paid services like FlockStar or otherwise.  This is a backyard management application, NOT a commercial flock management hub.  If critical uptime or real business operations are involved, you are hereby recommended to stick with youir paid service.
 
-Warning: Always back up your data.  This integration is desgined for this to be easy and streamlined- data can be downloaded in JSON or CSV format in milliseconds from any device directly from the card.  It is also stored in .storage for easy identification and regular automatic backup.  I am below a novice when it comes to software development, and used Claude heavily in the development of this integration.  Errors, issues, or unknown interactions could occur due to its use now or in the future.  By using this integration, you accept these risks as your own.
+!!!!!Warning!!!!!: Always back up your data.  This integration is desgined for this to be easy and streamlined- data can be downloaded in JSON or CSV format in milliseconds from any device directly from the card.  It is also stored in .storage for easy identification and regular automatic backup.  I am below a novice when it comes to software development, and used Claude heavily in the development of this integration.  Errors, issues, or unknown interactions could occur due to its use now or in the future.  By using this integration, you accept these risks as your own.
 
 > Built with [Claude](https://claude.ai) by [ChavoDeLa](https://github.com/ChavoDeLa).
 
