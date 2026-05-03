@@ -36,6 +36,64 @@ bc1q6xg9c68ctasnuy4ulykutek00qfqdg7ked3wx0
 - at midnight every night, counters reset to zero, counts are saved to JSON file
 - historical data and stats are populated automatically from live entries and JSON data file
 
+---
+
+## Installation
+
+### Integration Via HACS (recommended)
+
+1. In HACS, go to **Integrations → ⋮ → Custom repositories**
+2. Add `https://github.com/ChavoDeLa/ha-chicken-flock` as an **Integration**
+3. Find **Chicken Flock** in the HACS integration list and install
+4. Restart Home Assistant
+
+### Lovelace card Via HACS (recommended)
+
+1. In HACS, go to **Frontend → ⋮ → Custom repositories**
+2. Add `https://github.com/ChavoDeLa/ha-chicken-flock-card` as **Lovelace**
+3. Find **Chicken Flock Card** and install
+4. Refresh your browser
+
+### Integration Manual installation
+
+1. Download the latest release
+2. Copy `custom_components/chicken_flock/` to your `config/custom_components/` folder
+3. Copy `www/chicken-flock-card.js` to `config/www/`
+4. Restart Home Assistant
+
+---
+## Lovelace card Manual installation
+
+Copy `chicken-flock-card.js` from https://github.com/ChavoDeLa/ha-chicken-flock-card to `config/www/`, then register it as a resource:
+
+```yaml
+lovelace:
+  resources:
+    - url: /local/chicken-flock-card.js?v=1
+      type: module
+```
+
+---
+
+## Configuration
+
+1. Go to **Settings → Devices & Services → Add Integration**
+2. Search for **Chicken Flock**
+3. Click through the one-step setup
+
+Manage your flock from the Lovelace card. No YAML configuration is needed.
+
+---
+
+## Adding the card to your dashboard
+
+```yaml
+type: custom:chicken-flock-card
+```
+
+No additional configuration options required. All settings are in the card's ⚙ Settings tab.
+
+---
 ## Screenshots
 
 ### Active flock view
@@ -126,63 +184,6 @@ Export CSV example
 - Export egg history as CSV or JSON
 - Full backup and restore from the card UI
 - `chicken_flock.edit_history` service for programmatic history correction
-
----
-
-## Installation
-
-### Integration Via HACS (recommended)
-
-1. In HACS, go to **Integrations → ⋮ → Custom repositories**
-2. Add `https://github.com/ChavoDeLa/ha-chicken-flock` as an **Integration**
-3. Find **Chicken Flock** in the HACS integration list and install
-4. Restart Home Assistant
-
-### Lovelace card Via HACS (recommended)
-
-1. In HACS, go to **Frontend → ⋮ → Custom repositories**
-2. Add `https://github.com/ChavoDeLa/ha-chicken-flock-card` as **Lovelace**
-3. Find **Chicken Flock Card** and install
-4. Refresh your browser
-
-### Integration Manual installation
-
-1. Download the latest release
-2. Copy `custom_components/chicken_flock/` to your `config/custom_components/` folder
-3. Copy `www/chicken-flock-card.js` to `config/www/`
-4. Restart Home Assistant
-
----
-## Lovelace card Manual installation
-
-Copy `chicken-flock-card.js` from https://github.com/ChavoDeLa/ha-chicken-flock-card to `config/www/`, then register it as a resource:
-
-```yaml
-lovelace:
-  resources:
-    - url: /local/chicken-flock-card.js?v=1
-      type: module
-```
-
----
-
-## Configuration
-
-1. Go to **Settings → Devices & Services → Add Integration**
-2. Search for **Chicken Flock**
-3. Click through the one-step setup
-
-Manage your flock from the Lovelace card. No YAML configuration is needed.
-
----
-
-## Adding the card to your dashboard
-
-```yaml
-type: custom:chicken-flock-card
-```
-
-No additional configuration options required. All settings are in the card's ⚙ Settings tab.
 
 ---
 
